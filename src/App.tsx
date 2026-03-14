@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Book, Heart, Scroll, X, Moon, Settings, Home, Users } from 'lucide-react';
 import { yasinData, tahlilData, doaData, ContentItem } from './data';
+import logo from './assets/logo.png';
 
 type Section = 'yasin' | 'tahlil' | 'doa' | 'home';
 
@@ -40,7 +41,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto px-4 h-14 md:h-16 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveSection('home')}>
             <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center shadow-lg overflow-hidden border border-white/10">
-              <img src="/logo.png" alt="Bani Rawuh Logo" className="w-full h-full object-cover" />
+              <img src={logo} alt="Bani Rawuh Logo" className="w-full h-full object-cover" />
             </div>
             <h1 className="text-lg font-bold text-white tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-amber-400">Bani Rawuh</h1>
           </div>
@@ -218,7 +219,7 @@ function HomeView({ onNavigate, onShowDevPopup }: { onNavigate: (s: Section) => 
         transition={{ type: 'spring', damping: 15 }}
         className="w-48 h-48 md:w-64 md:h-64 bg-black rounded-[3rem] flex items-center justify-center shadow-[0_20px_50px_rgba(245,158,11,0.3)] relative overflow-hidden group border border-white/10"
       >
-        <img src="/logo.png" alt="Bani Rawuh Logo" className="w-full h-full object-cover relative z-10 group-hover:scale-110 transition-transform duration-500" />
+        <img src={logo} alt="Bani Rawuh Logo" className="w-full h-full object-cover relative z-10 group-hover:scale-110 transition-transform duration-500" />
         <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent" />
         <div className="absolute -right-4 -bottom-4 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl" />
       </motion.div>
