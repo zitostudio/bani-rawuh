@@ -40,7 +40,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto px-4 h-14 md:h-16 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveSection('home')}>
             <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center shadow-lg overflow-hidden border border-white/10">
-              <img src="/logo.png.png" alt="Bani Rawuh Logo" className="w-full h-full object-cover" />
+              <img src="/logo.png" alt="Bani Rawuh Logo" className="w-full h-full object-cover" />
             </div>
             <h1 className="text-lg font-bold text-white tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-amber-400">Bani Rawuh</h1>
           </div>
