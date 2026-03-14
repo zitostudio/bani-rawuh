@@ -218,7 +218,7 @@ function HomeView({ onNavigate, onShowDevPopup }: { onNavigate: (s: Section) => 
         transition={{ type: 'spring', damping: 15 }}
         className="w-48 h-48 md:w-64 md:h-64 bg-black rounded-[3rem] flex items-center justify-center shadow-[0_20px_50px_rgba(245,158,11,0.3)] relative overflow-hidden group border border-white/10"
       >
-        <img src="/logo.png.png" alt="Bani Rawuh Logo" className="w-full h-full object-cover relative z-10 group-hover:scale-110 transition-transform duration-500" />
+        <img src="/logo.png" alt="Bani Rawuh Logo" className="w-full h-full object-cover relative z-10 group-hover:scale-110 transition-transform duration-500" />
         <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent" />
         <div className="absolute -right-4 -bottom-4 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl" />
       </motion.div>
